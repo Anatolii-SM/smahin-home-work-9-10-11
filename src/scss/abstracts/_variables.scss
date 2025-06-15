@@ -1,0 +1,21 @@
+$font-family: "Roboto", sans-serif;
+$font-size: 16px;
+$font-weight: 400;
+
+$letter-spacing: 0.1em;
+
+$xl: 1200px;
+$lg: 992px;
+$md: 768px;
+$sm: 576px;
+
+$line-height: 1.64;
+$line-height-sm: 1.4;
+
+$conteiner-primary: 1110px;
+$conteiner-secondary: 540px;
+
+$gap: 20px;
+$gap-sm: calc(#{$gap} * 0.5);
+$gap-lg: calc(#{$gap} * 1.5);
+$gap-xl: calc(#{$gap} * 2);

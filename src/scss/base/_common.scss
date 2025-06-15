@@ -1,0 +1,24 @@
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  border: 0;
+
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(100%);
+  white-space: nowrap;
+  visibility: hidden;
+}
+
+.container {
+  width: min(100% - $gap-xl, $conteiner-primary);
+  margin-inline: auto;
+}
+
+.container-sm {
+  width: min(100% - $gap-xl, $conteiner-secondary);
+  margin-inline: auto;
+}
