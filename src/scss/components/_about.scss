@@ -2,4 +2,9 @@
 
 .about {
   background-color: $color-white;
+
+  @media (width < 576px) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 }

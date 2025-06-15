@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 html{
   line-height:1.15;
@@ -214,10 +215,6 @@ a{
   padding-top:79px;
   padding-bottom:140px;
 }
-
-.navbar{
-  margin-bottom:117px;
-}
 .navbar__list{
   display:-webkit-box;
   display:-ms-flexbox;
@@ -362,4 +359,24 @@ a{
 }
 .footer__description{
   font-size:13px;
+}
+@media (992px ≤ width){
+  .navbar{
+    margin-bottom:117px;
+  }
+}
+@media (width ≤ 992px){
+  .navbar{
+    margin-bottom:90px;
+  }
+}
+@media (width < 576px){
+  .about{
+    padding-top:50px;
+    padding-bottom:50px;
+  }
+  .process{
+    padding-top:50px;
+    padding-bottom:50px;
+  }
 }

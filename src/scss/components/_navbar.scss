@@ -1,7 +1,19 @@
 @use "../abstracts/" as *;
 
+@mixin tools {
+  @media (992px ≤ width) {
+    @content;
+  }
+
+  @media (width ≤ 992px) {
+    margin-bottom: 90px;
+  }
+}
+
 .navbar {
-  margin-bottom: 117px;
+  @include tools {
+    margin-bottom: 117px;
+  }
 
   &__list {
     display: flex;
