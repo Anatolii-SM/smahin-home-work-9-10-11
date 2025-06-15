@@ -333,6 +333,9 @@ a{
 .process__title{
   margin-bottom:2.25rem;
 }
+.process__description{
+  color:rgb(114, 114, 114);
+}
 
 .video{
   background-color:rgb(238, 239, 241);

@@ -21,4 +21,8 @@
   &__title {
     margin-bottom: 2.25rem; // 36px
   }
+
+  &__description {
+    color: $color-secondary;
+  }
 }
