@@ -1,0 +1,85 @@
+@use '../abstracts' as *;
+
+@mixin xl-min {
+  @media (#{$xl} ≤ width) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media (width < #{$xl}) {
+    @content;
+  }
+}
+
+@mixin xl-lg {
+  @media (#{$lg} ≤ width < #{$xl}) {
+    @content;
+  }
+}
+
+@mixin xl-md {
+  @media (#{$md} ≤ width < #{$xl}) {
+    @content;
+  }
+}
+
+@mixin xl-sm {
+  @media (#{$sm} ≤ width < #{$xl}) {
+    @content;
+  }
+}
+
+//lg
+
+@mixin lg-min {
+  @media (#{$lg} ≤ width) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (width < #{$lg}) {
+    @content;
+  }
+}
+
+@mixin lg-md {
+  @media (#{$md} ≤ width < #{$lg}) {
+    @content;
+  }
+}
+
+@mixin lg-sm {
+  @media (#{$sm} ≤ width < #{$lg}) {
+    @content;
+  }
+}
+
+//md
+
+@mixin md-min {
+  @media (#{$md} ≤ width) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (width ≤ #{$md}) {
+    @content;
+  }
+}
+
+//sm
+
+@mixin sm-min {
+  @media (#{$sm} ≤ width) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @media (width < #{$sm}) {
+    @content;
+  }
+}

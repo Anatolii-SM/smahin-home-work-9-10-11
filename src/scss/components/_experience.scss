@@ -1,16 +1,26 @@
-@use "../abstracts/" as *;
+@use '../abstracts/' as *;
+@use '../mixins' as *;
+@use '../mixins/mixins-media' as *;
 
 .experience {
   padding-top: 100px;
   padding-bottom: 92px;
-  background-color: $color-primary;
+
   color: $color-white;
+  background-color: $color-primary;
 
   &__container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     gap: $gap-xl;
+    justify-content: space-between;
+
+    @include lg-min {
+      justify-content: space-between;
+    }
+    @include lg {
+      justify-content: space-evenly;
+    }
   }
 
   &__item {
@@ -23,9 +33,10 @@
   }
 
   &-number {
+    margin-bottom: 0.125rem; // 2px
+
     font-size: 21px;
     font-weight: 500;
-    margin-bottom: 0.125rem; // 2px
   }
 
   &-picture {

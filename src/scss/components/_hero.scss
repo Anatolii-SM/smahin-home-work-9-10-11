@@ -1,10 +1,22 @@
-@use "../abstracts/" as *;
+@use '../abstracts' as *;
+@use '../mixins' as *;
+@use '../mixins/mixins-media' as *;
 
 .hero {
   display: flex;
-  flex-direction: column;
   align-items: flex-start;
-  max-width: $conteiner-secondary;
+  flex-direction: column;
+
+  @include md-min {
+    align-items: flex-start;
+
+    max-width: $conteiner-secondary;
+  }
+  @include md {
+    align-items: center;
+
+    text-align: center;
+  }
 
   &__title {
     margin-bottom: 2.5rem; // 40px
@@ -12,19 +24,24 @@
 
   &__description {
     margin-bottom: 3.5625rem; // 57px
+    align-items: flex-start;
+
     color: $color-secondary;
   }
 
   &__btn {
     display: flex;
-    justify-content: center;
     align-items: center;
-    text-transform: uppercase;
-    padding: 19px;
+    justify-content: center;
+
     min-width: 225px;
     min-height: 65px;
-    background-color: $color-primary;
-    color: $color-white;
+    padding: 19px;
+
     letter-spacing: $letter-spacing;
+    text-transform: uppercase;
+
+    color: $color-white;
+    background-color: $color-primary;
   }
 }

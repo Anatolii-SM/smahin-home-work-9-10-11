@@ -1,18 +1,19 @@
-@use "../abstracts/" as *;
-
-@mixin tools {
-  @media (992px ≤ width) {
-    @content;
-  }
-
-  @media (width ≤ 992px) {
-    margin-bottom: 90px;
-  }
-}
+@use '../abstracts/' as *;
+@use '../mixins' as *;
+@use '../mixins/mixins-media' as *;
 
 .navbar {
-  @include tools {
+  @include lg-min {
     margin-bottom: 117px;
+  }
+  @include lg-sm {
+    margin-bottom: 90px;
+  }
+  @include sm {
+    margin-bottom: 50px;
+  }
+  @include md {
+    justify-content: center;
   }
 
   &__list {
@@ -26,6 +27,7 @@
 
     &--active {
       color: $color-primary;
+
       font-weight: 500;
     }
   }

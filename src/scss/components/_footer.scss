@@ -1,13 +1,16 @@
 @use "../abstracts/" as *;
+@use "../mixins" as *;
 
 .footer {
-  background-color: $color-primary;
-  color: $color-white;
   padding-top: 50px;
   padding-bottom: 50px;
 
+  color: $color-white;
+  background-color: $color-primary;
+
   &__title {
     margin-bottom: 0.4375rem; // 7px
+
     font-size: 21px;
     font-weight: 500;
   }

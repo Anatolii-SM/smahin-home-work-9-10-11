@@ -1,10 +1,9 @@
-@use "../abstracts/" as *;
+@use "../abstracts" as *;
+@use "../mixins" as *;
+@use "../mixins/mixins-media" as *;
 
 .about {
   background-color: $color-white;
 
-  @media (width < 576px) {
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
+  @include section;
 }

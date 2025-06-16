@@ -1,7 +1,13 @@
-@use "../abstracts/" as *;
+@use '../abstracts/' as *;
+@use '../mixins' as *;
+@use '../mixins/mixins-media' as *;
 
 .header {
   background-color: $color-gray-light;
   padding-top: 79px;
   padding-bottom: 140px;
+
+  @include lg {
+    padding-bottom: 71px;
+  }
 }

@@ -4,11 +4,13 @@
   background-color: $color-gray-light;
 
   &__iframe {
-    border: 0;
     width: 100%;
     height: auto;
-    margin-bottom: 5.75rem; // 92px
-    aspect-ratio: 16 / 9;
     min-height: 200px;
+    margin-bottom: 5.75rem; // 92px
+
+    border: 0;
+
+    aspect-ratio: 16 / 9;
   }
 }
