@@ -1,5 +1,4 @@
 @use '../abstracts' as *;
-@use '../mixins' as *;
 @use '../mixins/mixins-media' as *;
 
 .hero {
@@ -8,10 +7,10 @@
   flex-direction: column;
 
   @include md-min {
-    align-items: flex-start;
-
     max-width: $conteiner-secondary;
+    align-items: flex-start;
   }
+
   @include md {
     align-items: center;
 
