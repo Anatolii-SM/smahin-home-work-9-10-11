@@ -136,3 +136,6 @@ https://anatolii-sm.github.io/smahin-home-work-9-10-11/
 По окончании работы над проектом, просто закрыть окно терминала или VSCode, если используется его терминал - недостаточно, необходимо предварительно остановить задачу watch.
 
 Для остановки задачи в терминале необходимо нажать комбинацию клавиш CTRL + C, затем подтвердить остановку задачи, нажав Y.
+
+https://github.com/Anatolii-SM/smahin-home-work-9-10-11/tree/main
+https://anatolii-sm.github.io/smahin-home-work-9-10-11/
