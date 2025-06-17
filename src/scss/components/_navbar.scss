@@ -1,6 +1,5 @@
 @use '../abstracts/' as *;
 @use '../mixins' as *;
-@use '../mixins/mixins-media' as *;
 
 .navbar {
   @include lg-min {
@@ -12,14 +11,15 @@
   @include sm {
     margin-bottom: 50px;
   }
-  @include md {
-    justify-content: center;
-  }
 
   &__list {
     display: flex;
     flex-wrap: wrap;
-    gap: 51px;
+    column-gap: 51px;
+  }
+
+  @include md {
+    justify-content: center;
   }
 
   &__link {

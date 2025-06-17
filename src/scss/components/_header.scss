@@ -1,13 +1,19 @@
 @use '../abstracts/' as *;
 @use '../mixins' as *;
-@use '../mixins/mixins-media' as *;
 
 .header {
   background-color: $color-gray-light;
   padding-top: 79px;
-  padding-bottom: 140px;
 
-  @include lg {
-    padding-bottom: 71px;
+  @include lg-min {
+    padding-bottom: 140px;
+  }
+
+  @include lg-sm {
+    padding-bottom: 70px;
+  }
+
+  @include sm {
+    padding-bottom: 50px;
   }
 }

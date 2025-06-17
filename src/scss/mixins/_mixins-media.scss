@@ -1,7 +1,8 @@
+@use '../abstracts/variables' as *;
 @use '../abstracts' as *;
 
 @mixin xl-min {
-  @media (#{$xl} ≤ width) {
+  @media (#{$xl} < width) {
     @content;
   }
 }
@@ -13,19 +14,19 @@
 }
 
 @mixin xl-lg {
-  @media (#{$lg} ≤ width < #{$xl}) {
+  @media (#{$lg} < width < #{$xl}) {
     @content;
   }
 }
 
 @mixin xl-md {
-  @media (#{$md} ≤ width < #{$xl}) {
+  @media (#{$md} < width < #{$xl}) {
     @content;
   }
 }
 
 @mixin xl-sm {
-  @media (#{$sm} ≤ width < #{$xl}) {
+  @media (#{$sm} < width < #{$xl}) {
     @content;
   }
 }
@@ -33,7 +34,7 @@
 //lg
 
 @mixin lg-min {
-  @media (#{$lg} ≤ width) {
+  @media (#{$lg} < width) {
     @content;
   }
 }
@@ -45,13 +46,13 @@
 }
 
 @mixin lg-md {
-  @media (#{$md} ≤ width < #{$lg}) {
+  @media (#{$md} < width < #{$lg}) {
     @content;
   }
 }
 
 @mixin lg-sm {
-  @media (#{$sm} ≤ width < #{$lg}) {
+  @media (#{$sm} < width < #{$lg}) {
     @content;
   }
 }
@@ -59,13 +60,13 @@
 //md
 
 @mixin md-min {
-  @media (#{$md} ≤ width) {
+  @media (#{$md} < width) {
     @content;
   }
 }
 
 @mixin md {
-  @media (width ≤ #{$md}) {
+  @media (width < #{$md}) {
     @content;
   }
 }
@@ -73,7 +74,7 @@
 //sm
 
 @mixin sm-min {
-  @media (#{$sm} ≤ width) {
+  @media (#{$sm} < width) {
     @content;
   }
 }

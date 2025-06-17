@@ -1,4 +1,5 @@
-@use "../abstracts/" as *;
+@use '../abstracts/' as *;
+@use '../mixins' as *;
 
 .video {
   background-color: $color-gray-light;
@@ -7,10 +8,19 @@
     width: 100%;
     height: auto;
     min-height: 200px;
-    margin-bottom: 5.75rem; // 92px
 
     border: 0;
 
     aspect-ratio: 16 / 9;
+  }
+
+  @include lg-min {
+    margin-bottom: 92px;
+  }
+  @include lg-sm {
+    margin-bottom: 70px;
+  }
+  @include sm {
+    margin-bottom: 50px;
   }
 }

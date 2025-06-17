@@ -1,5 +1,5 @@
-@use "../abstracts/" as *;
-@use "../mixins" as *;
+@use '../abstracts/' as *;
+@use '../mixins' as *;
 
 .footer {
   padding-top: 50px;
@@ -9,10 +9,18 @@
   background-color: $color-primary;
 
   &__title {
-    margin-bottom: 0.4375rem; // 7px
-
     font-size: 21px;
     font-weight: 500;
+
+    @include lg-min {
+      margin-bottom: 7px;
+    }
+    @include lg-sm {
+      margin-bottom: 5px;
+    }
+    @include sm {
+      margin-bottom: 3px;
+    }
   }
 
   &__description {

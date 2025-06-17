@@ -1,5 +1,5 @@
-@use '../abstracts' as *;
-@use '../mixins/mixins-media' as *;
+@use "../abstracts" as *;
+@use "../mixins/mixins-media" as *;
 
 .hero {
   display: flex;
@@ -7,10 +7,10 @@
   flex-direction: column;
 
   @include md-min {
-    max-width: $conteiner-secondary;
     align-items: flex-start;
-  }
 
+    max-width: $conteiner-secondary;
+  }
   @include md {
     align-items: center;
 
@@ -22,8 +22,9 @@
   }
 
   &__description {
-    margin-bottom: 3.5625rem; // 57px
     align-items: flex-start;
+
+    margin-bottom: 3.5625rem; // 57px
 
     color: $color-secondary;
   }
